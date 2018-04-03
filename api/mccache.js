@@ -63,7 +63,7 @@ function create_hostrec(service, uri, cb) {
         var rec = {
             info: get_hostinfo(host),
             communities: host['group-communities']||[],
-            services: [],
+            services: [{type: "traceroute"}, {type: "ping"}],
 
             //TODO .. I am not sure what we can do with host-administrators
             //host['host-administrators'],

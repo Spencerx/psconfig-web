@@ -14,7 +14,7 @@ if [ ! $? -eq 0 ]; then
     exit
 fi
 
-docker tag perfsonar/mca-admin perfsonar/mca-admin:3.0
+docker tag perfsonar/mca-admin perfsonar/mca-admin:3.0.3
 docker push perfsonar/mca-admin
 
 echo "preparing mca-pub"
@@ -30,5 +30,5 @@ if [ ! $? -eq 0 ]; then
     exit
 fi
 
-docker tag perfsonar/mca-pub perfsonar/mca-pub:3.0
+docker tag perfsonar/mca-pub perfsonar/mca-pub:3.0.3
 docker push perfsonar/mca-pub
